@@ -15,24 +15,6 @@ axis square; axis equal;
 title("nuage de points, graham's method");
 axis([0 1 0 1]); hold on;
 
-
-%% créer un tableau de taille 3 * n: les deux premiers lignes pour les coordonnées du point et le 3eme ligne pour l'angle ... 
-
-% sortedArray = zeros(3,n);
-% sortedArray(1,1) = pxmin; sortedArray(2,1) = pymin; sortedArray(3,1) = -2;
-% 
-% for i = 1:(minY - 1)
-%     sortedArray(1,i+1) = points(1,i);
-%     sortedArray(2,i+1) = points(2,i);
-%     sortedArray(3,i+1) = cosAngle(pxmin, pymin, points(1,i), points(2,i), 2, pymin);
-% end
-% for i = (minY + 1):n
-%     sortedArray(1,i) = points(1,i);
-%     sortedArray(2,i) = points(2,i);
-%     sortedArray(3,i) = cosAngle(pxmin, pymin, points(1,i), points(2,i), 2, pymin);
-% end
-
-
 %% tri des points selon ordre croissantes des abcisse:
 %points = sortrows(points',2,'ascend')';
 points = sortrows(points',[1,2],'ascend')'
